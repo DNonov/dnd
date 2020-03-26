@@ -1,7 +1,7 @@
 " Default GUI Colours
 let s:foreground = "e8e8d3"
-let s:background = "151515"
-let s:selection  = "d6d6d6"
+let s:background = "1d1d1d"
+let s:selection  = "2e2e2e"
 let s:line       = "151515"
 let s:comment    = "888888"
 let s:red        = "cf6a4c"
@@ -263,15 +263,15 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Statement", s:foreground, "", "")
 	call <SID>X("Conditional", s:foreground, "", "")
 	call <SID>X("Repeat", s:foreground, "", "")
-	call <SID>X("Structure", s:purple, "", "")
-	call <SID>X("Function", s:aqua, "", "")
+	call <SID>X("Structure", s:orange, "", "")
+	call <SID>X("Function", s:yellow, "", "")
 	call <SID>X("Constant", s:blue, "", "")
-	call <SID>X("Number", s:green, "", "")
-	call <SID>X("String", s:red, "", "")
+	call <SID>X("Number", s:red, "", "")
+	call <SID>X("String", s:green, "", "")
 	call <SID>X("Special", s:foreground, "", "")
 	call <SID>X("PreProc", s:blue, "", "")
-	call <SID>X("Operator", s:blue, "", "none")
-	call <SID>X("Type", s:purple, "", "none")
+	call <SID>X("Operator", s:aqua, "", "none")
+	call <SID>X("Type", s:orange, "", "none")
 	call <SID>X("Define", s:foreground, "", "none")
 	call <SID>X("Include", s:blue, "", "")
 	call <SID>X("SpellBad", "", s:background, "underline")
@@ -290,18 +290,19 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("NERDTreeDirSlash",s:blue, "", "")
 
 	" Fix jsx bug (different color on closing tag)
-	hi link xmlEndTag xmlTag
+  "hi link xmlEndTag xmlTag
 
 	" Python Highlighting
 	call <SID>X("pythonInclude", s:blue, "", "")
 	call <SID>X("pythonStatement", s:blue, "", "")
 	call <SID>X("pythonConditional", s:blue, "", "")
 	call <SID>X("pythonSelf", s:blue, "", "")
-	call <SID>X("pythonFunction", s:aqua, "", "")
-	call <SID>X("pythonFunctionCall", s:aqua, "", "")
+	call <SID>X("pythonFunction", s:yellow, "", "")
+	call <SID>X("pythonFunctionCall", s:yellow, "", "")
 	call <SID>X("pythonStrFormat", s:green, "", "")
-	call <SID>X("pythonClass", s:purple, "", "")
-	call <SID>X("pythonBuiltinType", s:purple, "", "")
+	call <SID>X("pythonExtraOperator", s:aqua, "", "")
+	call <SID>X("pythonClass", s:orange, "", "")
+	call <SID>X("pythonBuiltinType", s:orange, "", "")
 	call <SID>X("pythonBuiltinObj", s:blue, "", "")
 	call <SID>X("pythonRepeat", s:blue, "", "")
 
@@ -317,16 +318,17 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("jsNull", s:blue, "", "")
 	call <SID>X("jsRepeat", s:blue, "", "")
   call <SID>X("jsException", s:blue, "", "")
-  call <SID>X("jsExceptions", s:purple, "", "")
+  call <SID>X("jsExceptions", s:orange, "", "")
 	call <SID>X("jsStorageClass", s:blue, "", "")
 	call <SID>X("jsBooleanFalse", s:blue, "", "")
 	call <SID>X("jsBooleanTrue", s:blue, "", "")
-	call <SID>X("jsArrowFunction", s:blue, "", "")
-	call <SID>X("jsClassDefinition", s:purple, "", "")
-	call <SID>X("jsGlobalObjects", s:purple, "", "")
-	call <SID>X("jsGlobalNodeObjects", s:purple, "", "")
+	call <SID>X("jsArrowFunction", s:aqua, "", "")
+	call <SID>X("jsClassDefinition", s:orange, "", "")
+	call <SID>X("jsGlobalObjects", s:orange, "", "")
+	call <SID>X("jsGlobalNodeObjects", s:orange, "", "")
 	call <SID>X("jsExportDefault", s:blue, "", "")
 	call <SID>X("jsTemplateBraces", s:green, "", "")
+	call <SID>X("jsFlowobjectKey", s:aqua, "", "")
 
   " Bash Highlight
 	call <SID>X("shConditional", s:blue, "", "")
@@ -342,9 +344,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" HTML Highlighting
 	call <SID>X("htmlTag", s:comment, "", "")
 	call <SID>X("htmlEndTag", s:comment, "", "")
-	call <SID>X("htmlTagName", s:green, "", "")
+	call <SID>X("htmlTagName", s:orange, "", "")
 	call <SID>X("htmlArg", s:blue, "", "")
-	call <SID>X("htmlScriptTag", s:red, "", "")
+	call <SID>X("htmlScriptTag", s:green, "", "")
 
   " CSS Hightlighting
 	call <SID>X("cssTagName", s:blue, "", "")
@@ -353,9 +355,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" XML Highlighting
 	call <SID>X("xmlTag", s:comment, "", "")
-	call <SID>X("xmlTagName", s:green, "", "")
+	call <SID>X("xmlTagName", s:orange, "", "")
 	call <SID>X("xmlAttrib", s:blue, "", "")
-	call <SID>X("xmlEndTag", s:comment, "", "")
+	call <SID>X("xmlEqual", s:aqua, "", "")
+	call <SID>X("xmlEndTag", s:orange, "", "")
 
   " Vim Highlighting
   call <SID>X("vimFunction", s:aqua, "", "")
@@ -364,8 +367,15 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("vimFuncSID", s:aqua, "", "")
 
   " Diff Highlighting
-	call <SID>X("diffAdded", s:green, "", "")
-	call <SID>X("diffRemoved", s:red, "", "")
+  call <SID>X("DiffAdd", s:green, s:selection, "")
+  call <SID>X("DiffDelete", s:red, s:selection, "")
+  call <SID>X("DiffChange", s:yellow, s:selection, "")
+  call <SID>X("DiffText", s:foreground, s:selection, "")
+
+  call <SID>X("diffAdded", s:green, s:selection, "")
+  call <SID>X("diffRemoved", s:red, s:selection, "")
+  call <SID>X("diffChanged", s:yellow, s:selection, "")
+
 
   " GitGutter
 	call <SID>X("GitGutterAdd", s:green, "", "")
