@@ -297,6 +297,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("pythonStatement", s:blue, "", "")
 	call <SID>X("pythonConditional", s:blue, "", "")
 	call <SID>X("pythonSelf", s:blue, "", "")
+	call <SID>X("pythonClassVar", s:blue, "", "")
 	call <SID>X("pythonFunction", s:yellow, "", "")
 	call <SID>X("pythonFunctionCall", s:yellow, "", "")
 	call <SID>X("pythonStrFormat", s:green, "", "")
@@ -329,13 +330,20 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("jsExportDefault", s:blue, "", "")
 	call <SID>X("jsTemplateBraces", s:green, "", "")
 	call <SID>X("jsFlowobjectKey", s:aqua, "", "")
+	call <SID>X("jsxAttrib", s:blue, "", "")
+	call <SID>X("jsxTagName", s:orange, "", "")
+
+  " C Highlighting
+	call <SID>X("cRepeat", s:blue, "", "")
+	call <SID>X("cStatement", s:blue, "", "")
+	call <SID>X("cConditional", s:blue, "", "")
+	call <SID>X("cLabel", s:blue, "", "")
 
   " Bash Highlight
 	call <SID>X("shConditional", s:blue, "", "")
 	call <SID>X("shLoop", s:blue, "", "")
 	call <SID>X("shDerefSimple", s:blue, "", "")
 	call <SID>X("shDerefSimple", s:aqua, "", "")
-
 
   " Vim Script Highlighting
   call <SID>X("vimCommand", s:blue, "", "")
@@ -347,6 +355,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("htmlTagName", s:orange, "", "")
 	call <SID>X("htmlArg", s:blue, "", "")
 	call <SID>X("htmlScriptTag", s:green, "", "")
+	call <SID>X("htmlTitle", s:foreground, "", "")
+	call <SID>X("htmlH1", s:foreground, "", "")
 
   " CSS Hightlighting
 	call <SID>X("cssTagName", s:blue, "", "")
@@ -359,6 +369,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("xmlAttrib", s:blue, "", "")
 	call <SID>X("xmlEqual", s:aqua, "", "")
 	call <SID>X("xmlEndTag", s:orange, "", "")
+
+  " Markdown Hightlighting
+	call <SID>X("mkdHeading", s:blue, "", "")
+	call <SID>X("mkdCode", s:foreground, "", "")
 
   " Vim Highlighting
   call <SID>X("vimFunction", s:aqua, "", "")
@@ -375,7 +389,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("diffAdded", s:green, s:selection, "")
   call <SID>X("diffRemoved", s:red, s:selection, "")
   call <SID>X("diffChanged", s:yellow, s:selection, "")
-
 
   " GitGutter
 	call <SID>X("GitGutterAdd", s:green, "", "")
