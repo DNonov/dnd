@@ -364,6 +364,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("cStatement", s:blue, "", "")
 	call <SID>X("cConditional", s:blue, "", "")
 	call <SID>X("cLabel", s:blue, "", "")
+	call <SID>X("c_operator", s:blue, "", "")
 
   " Bash Highlight
 	call <SID>X("shConditional", s:blue, "", "")
