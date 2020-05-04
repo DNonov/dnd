@@ -338,6 +338,26 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("jsxEqual", s:blue, "", "")
 
   " TypeScript Highlight
+	call <SID>X("typescriptClassName", s:orange, "", "")
+	call <SID>X("typescriptBraces", s:foreground, "", "")
+	call <SID>X("typescriptConditional", s:blue, "", "")
+	call <SID>X("typescriptCase", s:blue, "", "")
+	call <SID>X("typescriptStatementKeyword", s:blue, "", "")
+	call <SID>X("typescriptExport", s:blue, "", "")
+	call <SID>X("typescriptVariable", s:blue, "", "")
+	call <SID>X("typescriptTypeReference", s:orange, "", "")
+	call <SID>X("typescriptRepeat", s:blue, "", "")
+	call <SID>X("typescriptBranch", s:blue, "", "")
+	call <SID>X("typescriptAssign", s:blue, "", "")
+	call <SID>X("typescriptBinaryOp", s:blue, "", "")
+	call <SID>X("typescriptRegexpString", s:green, "", "")
+	call <SID>X("typescriptImport", s:blue, "", "")
+	call <SID>X("typescriptFrom", s:blue, "", "")
+	call <SID>X("typescriptIdentifierName", s:orange, "", "")
+	call <SID>X("typescriptIdentifier", s:blue, "", "")
+	call <SID>X("typescriptArrowFunc", s:blue, "", "")
+	call <SID>X("typescriptCall", s:foreground, "", "")
+	call <SID>X("typescriptOperator", s:blue, "", "")
 
   " C Highlight
 	call <SID>X("cRepeat", s:blue, "", "")
