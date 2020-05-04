@@ -301,11 +301,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("pythonFunction", s:yellow, "", "")
 	call <SID>X("pythonFunctionCall", s:yellow, "", "")
 	call <SID>X("pythonStrFormat", s:green, "", "")
-	call <SID>X("pythonExtraOperator", s:aqua, "", "")
+	call <SID>X("pythonExtraOperator", s:blue, "", "")
+	call <SID>X("pythonOperator", s:blue, "", "")
 	call <SID>X("pythonClass", s:orange, "", "")
 	call <SID>X("pythonBuiltinType", s:orange, "", "")
 	call <SID>X("pythonBuiltinObj", s:blue, "", "")
 	call <SID>X("pythonRepeat", s:blue, "", "")
+	call <SID>X("pythonException", s:blue, "", "")
 
 	" JavaScript Highlight
   call <SID>X("jsFunction", s:blue, "", "")
