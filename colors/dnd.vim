@@ -314,6 +314,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("jsConditional", s:blue, "", "")
 	call <SID>X("jsUndefined", s:blue, "", "")
 	call <SID>X("jsStatement", s:blue, "", "")
+	call <SID>X("jsOperator", s:blue, "", "")
 	call <SID>X("jsLabel", s:blue, "", "")
 	call <SID>X("jsSuper", s:blue, "", "")
 	call <SID>X("jsReturn", s:blue, "", "")
@@ -325,15 +326,16 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("jsStorageClass", s:blue, "", "")
 	call <SID>X("jsBooleanFalse", s:blue, "", "")
 	call <SID>X("jsBooleanTrue", s:blue, "", "")
-	call <SID>X("jsArrowFunction", s:aqua, "", "")
+	call <SID>X("jsArrowFunction", s:blue, "", "")
 	call <SID>X("jsClassDefinition", s:orange, "", "")
 	call <SID>X("jsGlobalObjects", s:orange, "", "")
 	call <SID>X("jsGlobalNodeObjects", s:orange, "", "")
 	call <SID>X("jsExportDefault", s:blue, "", "")
 	call <SID>X("jsTemplateBraces", s:green, "", "")
-	call <SID>X("jsFlowobjectKey", s:aqua, "", "")
+	call <SID>X("jsFlowobjectKey", s:foreground, "", "")
 	call <SID>X("jsxAttrib", s:blue, "", "")
 	call <SID>X("jsxTagName", s:orange, "", "")
+	call <SID>X("jsxEqual", s:blue, "", "")
 
   " TypeScript Highlight
 
