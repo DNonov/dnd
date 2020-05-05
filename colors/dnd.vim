@@ -1,7 +1,7 @@
 " Default GUI Colours
-let s:foreground = "e8e8d3"
-let s:background = "1d1d1d"
-let s:selection  = "2e2e2e"
+let s:foreground = "eeeeee"
+let s:background = "252525"
+let s:selection  = "353535"
 let s:line       = "151515"
 let s:comment    = "888888"
 let s:red        = "cf6a4c"
@@ -246,15 +246,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("MatchParen", "", s:selection, "")
 	call <SID>X("Folded", s:comment, s:background, "")
 	call <SID>X("FoldColumn", "", s:background, "")
-	if version >= 700
-		call <SID>X("CursorLine", "", s:line, "none")
-		call <SID>X("CursorColumn", "", s:line, "none")
-		call <SID>X("PMenu", s:foreground, s:selection, "none")
-		call <SID>X("PMenuSel", s:foreground, s:selection, "reverse")
-	end
-	if version >= 703
-		call <SID>X("ColorColumn", "", s:line, "none")
-	end
+  call <SID>X("PMenu", s:foreground, s:selection, "none")
+  call <SID>X("CursorLine", "", s:selection, "none")
+  call <SID>X("ColorColumn", "", s:selection, "none")
+  call <SID>X("PMenuSel", s:foreground, s:selection, "reverse")
 
 	call <SID>X("Comment", s:comment, "", "")
 	call <SID>X("Todo", s:comment, s:background, "")
