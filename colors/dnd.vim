@@ -323,6 +323,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("jsBooleanTrue", s:blue, "", "")
 	call <SID>X("jsArrowFunction", s:blue, "", "")
 	call <SID>X("jsClassDefinition", s:orange, "", "")
+	call <SID>X("jsClassMethodType", s:blue, "", "")
 	call <SID>X("jsGlobalObjects", s:orange, "", "")
 	call <SID>X("jsGlobalNodeObjects", s:orange, "", "")
 	call <SID>X("jsExportDefault", s:blue, "", "")
