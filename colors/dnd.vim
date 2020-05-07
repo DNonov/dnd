@@ -361,6 +361,17 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("cLabel", s:blue, "", "")
 	call <SID>X("c_operator", s:blue, "", "")
 
+  " Ruby Highlight
+	call <SID>X("rubyClass", s:blue, "", "")
+	call <SID>X("rubyModule", s:blue, "", "")
+	call <SID>X("rubyDefine", s:blue, "", "")
+	call <SID>X("rubySymbol", s:aqua, "", "")
+	call <SID>X("rubyKeywordAsMethod", s:yellow, "", "")
+	call <SID>X("rubyStringDelimiter", s:green, "", "")
+	call <SID>X("rubyRegexpDelimiter", s:yellow, "", "")
+	call <SID>X("rubyConditional", s:blue, "", "")
+	call <SID>X("rubyInstanceVariable", s:aqua, "", "")
+
   " Bash Highlight
 	call <SID>X("shConditional", s:blue, "", "")
 	call <SID>X("shLoop", s:blue, "", "")
