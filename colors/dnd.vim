@@ -373,6 +373,14 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("rubyConditional", s:blue, "", "")
 	call <SID>X("rubyInstanceVariable", s:aqua, "", "")
 
+  " Clojure Highlight
+	call <SID>X("clojureDefine", s:blue, "", "")
+	call <SID>X("clojureSpecial", s:blue, "", "")
+	call <SID>X("clojureCond", s:blue, "", "")
+	call <SID>X("clojureException", s:blue, "", "")
+	call <SID>X("clojureKeyword", s:aqua, "", "")
+
+
   " Bash Highlight
 	call <SID>X("shConditional", s:blue, "", "")
 	call <SID>X("shLoop", s:blue, "", "")
