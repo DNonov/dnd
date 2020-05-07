@@ -403,6 +403,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("xmlEqual", s:aqua, "", "")
 	call <SID>X("xmlEndTag", s:orange, "", "")
 
+  " Yaml Highlight
+	call <SID>X("yamlKey", s:blue, "", "")
+
   " Markdown Highlight
 	call <SID>X("mkdHeading", s:blue, "", "")
 	call <SID>X("mkdCode", s:foreground, "", "")
