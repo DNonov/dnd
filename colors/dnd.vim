@@ -230,6 +230,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" Vim Highlight
 	call <SID>X("Normal", s:foreground, s:background, "")
   highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+  " This needs to be done cause of commit '8db2fc5' in GitGutter
+  highlight! link SignColumn LineNr
 	call <SID>X("NonText", s:selection, "", "")
 	call <SID>X("SpecialKey", s:selection, "", "")
 	call <SID>X("Search", s:foreground, s:selection, "")
