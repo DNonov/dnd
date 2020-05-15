@@ -354,6 +354,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("typescriptArrowFunc", s:blue, "", "")
 	call <SID>X("typescriptCall", s:foreground, "", "")
 	call <SID>X("typescriptOperator", s:blue, "", "")
+	call <SID>X("typescriptRegExpMethod", s:yellow, "", "")
+	call <SID>X("typescriptStringMethod", s:yellow, "", "")
+	call <SID>X("typescriptMathStaticMethod", s:yellow, "", "")
+	call <SID>X("typescriptArrayMethod", s:yellow, "", "")
+	call <SID>X("typescriptES6SetMethod", s:yellow, "", "")
 
   " C Highlight
 	call <SID>X("cRepeat", s:blue, "", "")
@@ -424,6 +429,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("vimUserFunc", s:aqua, "", "")
   call <SID>X("vimNotation", s:aqua, "", "")
   call <SID>X("vimFuncSID", s:aqua, "", "")
+
+  " Nginx.conf Highlight
+  call <SID>X("ngxDirectiveBlock", s:blue, "", "")
+  call <SID>X("ngxDirectiveImportant", s:blue, "", "")
+  call <SID>X("ngxDirective", s:blue, "", "")
 
   " Diff Highlight
   call <SID>X("DiffAdd", s:green, s:selection, "")
