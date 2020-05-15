@@ -423,6 +423,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   " Markdown Highlight
 	call <SID>X("mkdHeading", s:blue, "", "")
 	call <SID>X("mkdCode", s:foreground, "", "")
+	call <SID>X("mkdLink", s:aqua, "", "underline")
+	call <SID>X("mkdInlineURL", s:aqua, "", "underline")
+	call <SID>X("htmlH1", s:blue, "", "")
 
   " Vim Highlight
   call <SID>X("vimFunction", s:aqua, "", "")
