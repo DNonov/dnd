@@ -3,10 +3,10 @@ Dark theme inspired by [Jellybeans.vim](https://github.com/nanotech/jellybeans.v
 
 ## Screenshots
 ### JavaScript
-![](https://raw.githubusercontent.com/DNonov/light-delight/master/media/javascript.png)
+![](https://raw.githubusercontent.com/DNonov/dnd/master/media/javascript.png)
 ### CSS
-![](https://raw.githubusercontent.com/DNonov/light-delight/master/media/css.png)
+![](https://raw.githubusercontent.com/DNonov/dnd/master/media/css.png)
 ### HTML
-![](https://raw.githubusercontent.com/DNonov/light-delight/master/media/html.png)
+![](https://raw.githubusercontent.com/DNonov/dnd/master/media/html.png)
 ### Python
-![](https://raw.githubusercontent.com/DNonov/light-delight/master/media/python.png)
+![](https://raw.githubusercontent.com/DNonov/dnd/master/media/python.png)
