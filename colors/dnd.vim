@@ -460,6 +460,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("GitGutterChange", s:aqua, "", "")
 	call <SID>X("GitGutterDelete", s:red, "", "")
 
+  " Magit
+	call <SID>X("fileEntry", s:blue, "", "")
+
 	" Delete Functions
 	delf <SID>X
 	delf <SID>rgb
