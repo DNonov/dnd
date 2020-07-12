@@ -229,16 +229,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" Vim Highlight
 	call <SID>X("Normal", s:foreground, s:background, "")
-  highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
-  " This needs to be done cause of commit '8db2fc5' in GitGutter
-  highlight! link SignColumn LineNr
 	call <SID>X("NonText", s:selection, "", "")
 	call <SID>X("SpecialKey", s:selection, "", "")
 	call <SID>X("Search", s:foreground, s:selection, "")
 	call <SID>X("TabLine", s:foreground, s:background, "reverse")
 	call <SID>X("StatusLine", s:window, s:blue, "reverse")
 	call <SID>X("StatusLineNC", s:window, s:foreground, "reverse")
-	call <SID>X("VertSplit", s:window, s:window, "none")
+	call <SID>X("VertSplit", s:foreground, s:background, "none")
 	call <SID>X("Visual", "", s:selection, "")
 	call <SID>X("Directory", s:blue, "", "")
 	call <SID>X("ModeMsg", s:green, "", "")
@@ -251,6 +248,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("PMenu", s:foreground, s:selection, "none")
   call <SID>X("CursorLine", "", s:selection, "none")
   call <SID>X("ColorColumn", "", s:selection, "none")
+  call <SID>X("LineNr", s:comment, s:background, "none")
+  call <SID>X("SignColumn", s:comment, s:background, "none")
   call <SID>X("PMenuSel", s:foreground, s:selection, "reverse")
 
 	call <SID>X("Comment", s:comment, "", "")
